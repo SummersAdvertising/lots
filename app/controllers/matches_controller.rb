@@ -27,7 +27,7 @@ class MatchesController < ApplicationController
 			map_task.save			
 		end
 		
-	  	@selectors = Worker.find(:all, :order => "RANDOM();").last(2)  	
+	  	@selectors = Worker.find(:all, :order => "RAND()").last(2)  	
 	  	@worker_user = @selectors.first
 	  	@task_user = @selectors.last
 	  	
