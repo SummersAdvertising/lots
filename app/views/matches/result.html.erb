@@ -1,0 +1,22 @@
+<style>
+	table.result{
+		border: 1px solid #000;
+		border-collapse: collapse;
+	}
+		table.result td {
+			border: 1px solid #222 ;
+		}
+</style>
+
+<table class="result">
+	<tr>
+		<th>小羊</th>
+		<th>要幹嘛</th>
+	</tr>	
+<% (0..@workers.length-1).each do | i | %>
+	<tr>
+		<td><%= @workers[i].name%></td>
+		<td><%= @tasks[i].nil? ? '休息' : @tasks[i].title%></td>
+	</tr>	
+<% end %>
+</table>

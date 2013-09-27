@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @map_worker.name %>
+</p>
+
+<p>
+  <b>Order:</b>
+  <%= @map_worker.order %>
+</p>
+
+<p>
+  <b>Status:</b>
+  <%= @map_worker.status %>
+</p>
+
+<p>
+  <b>Worker:</b>
+  <%= @map_worker.worker_id %>
+</p>
+
+<p>
+  <b>Match:</b>
+  <%= @map_worker.match_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_map_worker_path(@map_worker) %> |
+<%= link_to 'Back', map_workers_path %>

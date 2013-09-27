@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Title:</b>
+  <%= @map_task.title %>
+</p>
+
+<p>
+  <b>Order:</b>
+  <%= @map_task.order %>
+</p>
+
+<p>
+  <b>Status:</b>
+  <%= @map_task.status %>
+</p>
+
+<p>
+  <b>Task:</b>
+  <%= @map_task.task_id %>
+</p>
+
+<p>
+  <b>Match:</b>
+  <%= @map_task.match_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_map_task_path(@map_task) %> |
+<%= link_to 'Back', map_tasks_path %>

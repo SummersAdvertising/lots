@@ -1,0 +1,31 @@
+<h1>Listing map_workers</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Order</th>
+    <th>Status</th>
+    <th>Worker</th>
+    <th>Match</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @map_workers.each do |map_worker| %>
+  <tr>
+    <td><%= map_worker.name %></td>
+    <td><%= map_worker.order %></td>
+    <td><%= map_worker.status %></td>
+    <td><%= map_worker.worker_id %></td>
+    <td><%= map_worker.match_id %></td>
+    <td><%= link_to 'Show', map_worker %></td>
+    <td><%= link_to 'Edit', edit_map_worker_path(map_worker) %></td>
+    <td><%= link_to 'Destroy', map_worker, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Map worker', new_map_worker_path %>

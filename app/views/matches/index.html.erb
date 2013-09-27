@@ -1,0 +1,11 @@
+<%= form_for( @match ) do | f | %>
+
+	<%= f.submit "又一週了。" %>
+
+<% end %>
+
+<ul>
+<% @matches.each do | m | %>
+<li>第<%= m.id %>次打掃分配 <%= link_to '分配人員', workers_match_path( m ) %> | <%= link_to '分配工作', tasks_match_path( m ) %> </li>
+<% end %>
+</ul>

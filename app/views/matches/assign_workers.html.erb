@@ -1,0 +1,15 @@
+<dl>
+<%= form_for( workers_match_path( @match ), :method => :post ) do | f | %>
+	<% @workers.each do | m | %>
+		<%= fields_for(m) do | field | %>
+		<dt><%= m.name %></dt>
+		<dd>
+			<label>順序
+				<input type="text" name="map_workers_orders[<%= m.id %>][order]" />
+			</label>
+		</dd>
+		<% end %>
+	<% end %>
+	<%= f.submit %>
+<% end %>
+</dl>

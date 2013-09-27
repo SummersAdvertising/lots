@@ -1,0 +1,15 @@
+<dl>
+<%= form_for( tasks_match_path( @match ), :method => :post ) do | f | %>
+	<% @tasks.each do | t | %>
+		<%= fields_for(t) do | field | %>
+		<dt><%= t.title %></dt>
+		<dd>
+			<label>順序
+				<input type="text" name="map_tasks_orders[<%= t.id %>][order]" />
+			</label>
+		</dd>
+		<% end %>
+	<% end %>
+	<%= f.submit %>
+<% end %>
+</dl>

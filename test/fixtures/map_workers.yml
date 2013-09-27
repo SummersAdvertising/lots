@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  order: 1
+  status: MyString
+  worker_id: 1
+  match_id: 1
+
+two:
+  name: MyString
+  order: 1
+  status: MyString
+  worker_id: 1
+  match_id: 1
