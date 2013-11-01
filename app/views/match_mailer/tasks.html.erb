@@ -6,8 +6,7 @@
 	</head>
 	<body>
 	
-	<%#= URI.join( root_url, tasks_match_path( @match ) ) %>
-	<%=  'http://192.168.1.68:3000/' + tasks_match_path( @match ) %>
+	<%= URI.join( root_url, tasks_match_path( @match ) ) %>
 	
 	</body>
 </html>

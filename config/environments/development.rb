@@ -40,7 +40,7 @@ Lots::Application.configure do
     :port                 	=> 587,
     :domain               => 'localhost',
     :user_name            => 'adword@summers.com.tw',
-    :password             => '4957QW9780',
+    :password             => '7123QW9780',
     :authentication       => 'plain',
     :enable_starttls_auto => true
   }
