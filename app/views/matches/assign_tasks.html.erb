@@ -1,6 +1,6 @@
 <dl>
 <%= form_for( tasks_match_path( @match ), :method => :post ) do | f | %>
-	<% @tasks.each do | t | %>
+	<% @tasks.shuffle!.each do | t | %>
 		<%= fields_for(t) do | field | %>
 		<dt><%= t.title %></dt>
 		<dd>

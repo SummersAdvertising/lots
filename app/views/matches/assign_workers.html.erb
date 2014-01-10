@@ -1,6 +1,6 @@
 <dl>
 <%= form_for( workers_match_path( @match ), :method => :post ) do | f | %>
-	<% @workers.each do | m | %>
+	<% @workers.shuffle!.each do | m | %>
 		<%= fields_for(m) do | field | %>
 		<dt><%= m.name %></dt>
 		<dd>
